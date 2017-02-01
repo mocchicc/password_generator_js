@@ -58,5 +58,17 @@
          Symbols?: <input type="checkbox"></p>
     </fieldset>
   </div>
+<script>
+(function() {
+  'use strict';
+
+  var slider = document.getElementById('slider');
+  var label = document.getElementById('label');
+
+  slider.addEventListener('change', function() {
+    label.innnerHTML = this.value;
+  })
+})
+</script>
 </body>
 </html>
